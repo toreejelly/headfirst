@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>iRock</title>
+	</head>
+	
+	<script type="text/javascript">
+/*
+	function a(){
+			alert('hello');
+		}
+ */	
+ 	
+ 	function touchRock(){
+	 		var userName = prompt("what is your name?", "enter your name here.");
+	 		//console.log(">>>> userName : ", userName);
+	 		if(userName){
+	 			alert("meet you," + userName + ".");
+	 			document.getElementById("rockimg").src = "smile.png"
+	 		}//if end
+ 		}//
+ 	</script> 
+	
+	<body onload="alert('hello');">
+		<div style="margin-top:100px; text-align:center">
+			<img id="rockimg" src="sad.png" alt="iRock" style="coursor:pointer" 
+			onclick="touchRock();" />		
+		</div>
+	</body>
+</html>
